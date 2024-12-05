@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="673.0" prefWidth="915.0" style="-fx-background-color: #fffff0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ComplaintsShowController">
+	<children>
+		<Button layoutX="350.0" layoutY="547.0" onAction="#handleDelete" prefHeight="53.0" prefWidth="215.0" style="-fx-background-color: #efaf23; -fx-text-fill: white;" text="Delete">
+			<font>
+				<Font size="27.0" />
+			</font>
+		</Button>
+		<Label layoutX="371.0" layoutY="115.0" text="Complaints">
+			<font>
+				<Font size="36.0" />
+			</font>
+		</Label>
+		<Label layoutX="393.0" layoutY="14.0" text="Jd" textFill="#efaf23">
+			<font>
+				<Font size="53.0" />
+			</font>
+		</Label>
+		<Label layoutX="442.0" layoutY="14.0" text="eco" textFill="#6b6f7e">
+			<font>
+				<Font size="53.0" />
+			</font>
+		</Label>
+		<TableView fx:id="complaintsTable" layoutX="34.0" layoutY="211.0" prefHeight="288.0" prefWidth="848.0">
+			<columns>
+				<TableColumn fx:id="complaintIdColumn" prefWidth="117.0" text="Fault ID" />
+				<TableColumn fx:id="detailsColumn" prefWidth="428.0" text="Details" />
+				<TableColumn fx:id="dateColumn" prefWidth="145.0" text="Date" />
+				<TableColumn fx:id="reportedByColumn" prefWidth="156.0" text="Reported By" />
+			</columns>
+		</TableView>
+	</children>
+	<padding>
+		<Insets bottom="20" left="20" right="20" top="20" />
+	</padding>
+</AnchorPane>

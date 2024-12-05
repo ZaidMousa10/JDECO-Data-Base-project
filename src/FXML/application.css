@@ -1,0 +1,32 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#newPasswordField, #confirmPasswordField {
+    -fx-prompt-text-fill: #757575;
+    -fx-background-color: linear-gradient(to bottom, #ECEFF1, #B0BEC5);
+    -fx-background-radius: 10;
+    -fx-border-color: #90A4AE;
+    -fx-border-radius: 10;
+    -fx-border-width: 2px;
+}
+
+#resetPasswordButton {
+    -fx-background-color: linear-gradient(to bottom, #43A047, #1B5E20);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 3, 0, 0, 1);
+}
+.label-style {
+    -fx-font-family: 'Arial';
+    -fx-font-size: 36.0;
+    -fx-text-fill: linear-gradient(to bottom, #FF4081, #3F51B5); /* Gradient color */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 1);
+}
+.toggle-button {
+    -fx-background-color: #3498db; /* Blue color for default state */
+    -fx-text-fill: white; /* White text color */
+}
+
+/* Style for the "Show Password" ToggleButton when selected */
+.toggle-button:selected {
+    -fx-background-color: #8e44ad; /* Purple color when selected */
+}

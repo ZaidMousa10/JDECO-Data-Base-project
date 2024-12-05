@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="584.0" prefWidth="1056.0" style="-fx-background-color: #fffff0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+	<children>
+		<TextField fx:id="username" layoutX="398.0" layoutY="240.0" prefHeight="31.0" prefWidth="281.0" promptText="Username" style="-fx-background-color: #fffff0;">
+			<cursor>
+				<Cursor fx:constant="CLOSED_HAND" />
+			</cursor>
+		</TextField>
+		<PasswordField fx:id="password" cache="true" layoutX="398.0" layoutY="298.0" prefHeight="31.0" prefWidth="200.0" promptText="Password" style="-fx-background-color: #fffff0;" />
+		<ToggleButton fx:id="showPasswordButton" layoutX="608.0" layoutY="298.0" mnemonicParsing="false" onAction="#handleShowPasswordAction" prefHeight="31.0" prefWidth="70.0" style="-fx-background-color: #fffff0;" text="Show" textFill="#a0a2ab" />
+		<Button fx:id="signup" layoutX="448.0" layoutY="443.0" mnemonicParsing="false" onAction="#signUpAction" prefHeight="50.0" prefWidth="114.0" style="-fx-background-color: #fffff0;" text="Sign UP" textFill="#a0a2ab">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Button>
+		<Button fx:id="login" layoutX="528.0" layoutY="371.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" prefHeight="31.0" prefWidth="143.0" style="-fx-background-color: #efaf23;" text="Login" textFill="WHITE" />
+		<CheckBox fx:id="rememberMeCheckbox" layoutX="347.0" layoutY="373.0" onAction="#handleRememberMeAction" text="Remember Me" textFill="#a0a2ab">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</CheckBox>
+		<Button fx:id="forgotpassword" layoutX="395.0" layoutY="408.0" mnemonicParsing="false" onAction="#forgotpasswordAction" prefHeight="39.0" prefWidth="234.0" style="-fx-background-color: #fffff0;" text="Forgot Your Password?" textFill="#a0a2ab" underline="true">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Button>
+		<ImageView fitHeight="217.0" fitWidth="1108.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Users/user/Downloads/jdecoImage/jdecoImage/download.png" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="31.0" fitWidth="27.0" layoutX="347.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Users/user/Downloads/CarImage/CarImage/Daco_4087530.png" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="31.0" fitWidth="27.0" layoutX="347.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Users/user/Downloads/CarImage/CarImage/lock-xxl.png" />
+			</image>
+		</ImageView>
+		<Label layoutX="14.0" layoutY="185.0" text="Jd" textFill="#efaf23">
+			<font>
+				<Font size="64.0" />
+			</font>
+		</Label>
+		<Label layoutX="75.0" layoutY="185.0" text="eco" textFill="#a0a2ab">
+			<font>
+				<Font size="64.0" />
+			</font>
+		</Label>
+		<ImageView fx:id="progres" fitHeight="61.0" fitWidth="56.0" layoutX="470.0" layoutY="501.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Users/user/Downloads/CarImage/CarImage/ZKZg.gif" />
+			</image>
+		</ImageView>
+	</children>
+</AnchorPane>

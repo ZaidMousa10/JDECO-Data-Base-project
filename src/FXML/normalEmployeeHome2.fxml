@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="home" prefHeight="655.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.normalEmployeeHomeController">
+	<children>
+		<Button fx:id="requests" contentDisplay="TOP" layoutX="53.0" layoutY="43.0" mnemonicParsing="false" onAction="#handleRequestsAction" prefHeight="285.0" prefWidth="336.0" style="-fx-background-color: #efaf23;" text="Requests for new Service" textFill="WHITE">
+			<graphic>
+				<ImageView fitHeight="188.0" fitWidth="303.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../../../Users/user/Downloads/jdecoImage/jdecoImage/mix-icon-for-electric-service-vector-removebg-preview.jpg" />
+					</image>
+				</ImageView>
+			</graphic>
+			<font>
+				<Font name="System Bold" size="18.0" />
+			</font>
+		</Button>
+		<Button fx:id="meters" contentDisplay="TOP" layoutX="484.0" layoutY="43.0" mnemonicParsing="false" onAction="#handleMetersAction" prefHeight="285.0" prefWidth="336.0" style="-fx-background-color: #efaf23;" text="Meters" textFill="WHITE">
+			<graphic>
+				<ImageView fitHeight="184.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../../../Users/user/Downloads/jdecoImage/jdecoImage/electric-meter-line-icon-vector-removebg-preview.jpg" />
+					</image>
+				</ImageView>
+			</graphic>
+			<font>
+				<Font name="System Bold" size="24.0" />
+			</font>
+		</Button>
+		<Button fx:id="electricService" contentDisplay="TOP" layoutX="53.0" layoutY="342.0" mnemonicParsing="false" onAction="#handleElectricServiceAction" prefHeight="285.0" prefWidth="336.0" style="-fx-background-color: #efaf23;" text="Electric Service" textFill="WHITE">
+			<graphic>
+				<ImageView fitHeight="184.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../../../Users/user/Downloads/jdecoImage/jdecoImage/1453181-removebg-preview.jpg" />
+					</image>
+				</ImageView>
+			</graphic>
+			<font>
+				<Font name="System Bold" size="24.0" />
+			</font>
+		</Button>
+		<Button fx:id="customerServices" contentDisplay="TOP" layoutX="484.0" layoutY="342.0" mnemonicParsing="false" onAction="#handleCustomerServicesAction" prefHeight="285.0" prefWidth="336.0" style="-fx-background-color: #efaf23;" text="Customer Services" textFill="WHITE">
+			<graphic>
+				<ImageView fitHeight="188.0" fitWidth="303.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../../../Users/user/Downloads/jdecoImage/jdecoImage/360_F_576930781_yByeVfHE2DRNgP0eAAYxftAwCQidkjuM-removebg-preview.jpg" />
+					</image>
+				</ImageView>
+			</graphic>
+			<font>
+				<Font name="System Bold" size="18.0" />
+			</font>
+		</Button>
+	</children>
+</AnchorPane>

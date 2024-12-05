@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="home" prefHeight="673.0" prefWidth="915.0" style="-fx-background-color: #fffff0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EditEmployeeController">
+    <children>
+        <VBox layoutX="225.0" layoutY="208.0" prefHeight="400.0" prefWidth="465.0" spacing="10.0">
+            <HBox spacing="10.0">
+                <Label prefHeight="44.0" prefWidth="148.0" text="Full Name:" textFill="#a0a2ab">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+                <TextField fx:id="fullNameField" prefHeight="25.0" prefWidth="340.0" promptText="Full Name" />
+            </HBox>
+            <HBox spacing="10.0">
+                <Label prefHeight="32.0" prefWidth="146.0" text="Job Name:" textFill="#a0a2ab">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+                <TextField fx:id="gobNameField" prefHeight="25.0" prefWidth="335.0" promptText="Job Name" />
+            </HBox>
+            <HBox spacing="10.0">
+                <Label prefHeight="27.0" prefWidth="146.0" text="Password:" textFill="#a0a2ab">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+                <PasswordField fx:id="ePasswordField" prefHeight="25.0" prefWidth="335.0" promptText="Password" />
+            </HBox>
+            <HBox spacing="10.0">
+                <Label prefHeight="32.0" prefWidth="135.0" text="Salary:" textFill="#a0a2ab">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+                <TextField fx:id="salaryField" prefHeight="25.0" prefWidth="324.0" promptText="Salary" />
+            </HBox>
+            <HBox spacing="10.0">
+                <Label prefHeight="38.0" prefWidth="137.0" text="Role:" textFill="#a0a2ab">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+                <TextField fx:id="eRoleField" prefHeight="25.0" prefWidth="329.0" promptText="Role" />
+            </HBox>
+            <HBox spacing="10.0">
+                <Label prefHeight="26.0" prefWidth="134.0" text="Phone Number:" textFill="#a0a2ab">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+                <TextField fx:id="phoneNumberField" prefHeight="27.0" prefWidth="325.0" promptText="Phone Number" />
+            </HBox>
+            <HBox spacing="10.0">
+                <Label prefHeight="27.0" prefWidth="143.0" text="Address:" textFill="#a0a2ab">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+                <TextField fx:id="addressField" prefHeight="25.0" prefWidth="339.0" promptText="Address" />
+            </HBox>
+            <HBox spacing="10.0">
+                <Label prefHeight="18.0" prefWidth="142.0" text="Email:" textFill="#a0a2ab">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+                <TextField fx:id="emailField" prefHeight="25.0" prefWidth="337.0" promptText="Email" />
+            </HBox>
+        </VBox>
+        <Button layoutX="379.0" layoutY="556.0" onAction="#handleSaveEmployee" prefHeight="36.0" prefWidth="157.0" style="-fx-background-color: #efaf23;" text="Save" />
+        <Label layoutX="334.0" layoutY="120.0" text="Edit Employee">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="356.0" layoutY="26.0" text="Jd" textFill="#efaf23">
+            <font>
+                <Font size="53.0" />
+            </font>
+        </Label>
+        <Label layoutX="405.0" layoutY="26.0" text="eco" textFill="#6b6f7e">
+            <font>
+                <Font size="53.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

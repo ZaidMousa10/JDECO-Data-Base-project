@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="667.0" prefWidth="945.0" style="-fx-background-color: #efaf23;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SignUpController">
+	<children>
+		<TextField fx:id="name" layoutX="326.0" layoutY="160.0" prefHeight="31.0" prefWidth="281.0" promptText="Enter Your Full Name" style="-fx-background-color: #fffff0;">
+			<cursor>
+				<Cursor fx:constant="CLOSED_HAND" />
+			</cursor>
+		</TextField>
+		<PasswordField fx:id="password" cache="true" layoutX="326.0" layoutY="230.0" prefHeight="31.0" prefWidth="281.0" promptText="Enter Your Password" style="-fx-background-color: #fffff0;" />
+		<Button fx:id="login" layoutX="692.0" layoutY="34.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="39.0" prefWidth="145.0" style="-fx-background-color: #a0a2ab; -fx-border-color: #a0a2ab;" text="Login" textFill="WHITE">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Button>
+		<ImageView fitHeight="162.0" fitWidth="177.0" layoutX="365.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Users/user/Downloads/jdecoImage/jdecoImage/4656969b23556d1b860b43793e565907-removebg-preview.jpg" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="31.0" fitWidth="27.0" layoutX="289.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Users/user/Downloads/CarImage/CarImage/Daco_4087530.png" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="31.0" fitWidth="27.0" layoutX="289.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Users/user/Downloads/CarImage/CarImage/lock-xxl.png" />
+			</image>
+		</ImageView>
+		<Label layoutX="400.0" layoutY="91.0" text="Jd" textFill="WHITE">
+			<font>
+				<Font size="48.0" />
+			</font>
+		</Label>
+		<Label layoutX="445.0" layoutY="91.0" text="eco" textFill="#a0a2ab">
+			<font>
+				<Font size="48.0" />
+			</font>
+		</Label>
+		<RadioButton fx:id="male" layoutX="326.0" layoutY="490.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="101.0" text="Male">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</RadioButton>
+		<RadioButton fx:id="female" layoutX="459.0" layoutY="490.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="101.0" text="Female">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</RadioButton>
+		<Button fx:id="signup" layoutX="326.0" layoutY="550.0" mnemonicParsing="false" onAction="#signUpAction" prefHeight="31.0" prefWidth="281.0" style="-fx-background-color: #a0a2ab;" text="Sign Up" textFill="WHITE">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Button>
+		<ImageView fx:id="progres" fitHeight="31.0" fitWidth="27.0" layoutX="445.0" layoutY="606.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Users/user/Downloads/CarImage/CarImage/ZKZg.gif" />
+			</image>
+		</ImageView>
+		<Label layoutX="326.0" layoutY="456.0" text="Choose Your Gender">
+			<font>
+				<Font size="24.0" />
+			</font>
+		</Label>
+		<TextField fx:id="phone" layoutX="326.0" layoutY="361.0" prefHeight="31.0" prefWidth="281.0" promptText="Enter Your Phone Number" style="-fx-background-color: #fffff0;">
+			<cursor>
+				<Cursor fx:constant="CLOSED_HAND" />
+			</cursor>
+		</TextField>
+		<TextField fx:id="email" layoutX="326.0" layoutY="300.0" prefHeight="31.0" prefWidth="281.0" promptText="Enter Your Email" style="-fx-background-color: #fffff0;">
+			<cursor>
+				<Cursor fx:constant="CLOSED_HAND" />
+			</cursor>
+		</TextField>
+		<ImageView fitHeight="31.0" fitWidth="27.0" layoutX="289.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Users/user/Downloads/jdecoImage/jdecoImage/png-clipart-gmail-computer-icons-logo-email-internet-gmail-angle-text-thumbnail-removebg-preview.jpg" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="31.0" fitWidth="27.0" layoutX="289.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Users/user/Downloads/jdecoImage/jdecoImage/Phone%20icon%20in%20Windows%20Metro%20Style-removebg-preview.jpg" />
+			</image>
+		</ImageView>
+		<TextField fx:id="address" layoutX="326.0" layoutY="419.0" prefHeight="31.0" prefWidth="281.0" promptText="Enter Your Address" style="-fx-background-color: #fffff0;">
+			<cursor>
+				<Cursor fx:constant="CLOSED_HAND" />
+			</cursor>
+		</TextField>
+		<ImageView fitHeight="31.0" fitWidth="27.0" layoutX="289.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../Users/user/Downloads/jdecoImage/jdecoImage/gratis-png-icono-de-inicio-negro-iconos-de-computadora-direccion-icono-de-direccion-removebg-preview.jpg" />
+			</image>
+		</ImageView>
+	</children>
+</AnchorPane>

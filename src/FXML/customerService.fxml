@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="home" prefHeight="673.0" prefWidth="915.0" style="-fx-background-color: #fffff0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CustomerServicesController">
+	<children>
+		<Label layoutX="381.0" layoutY="14.0" text="Jd" textFill="#efaf23">
+			<font>
+				<Font size="53.0" />
+			</font>
+		</Label>
+		<Label layoutX="430.0" layoutY="14.0" text="eco" textFill="#6b6f7e">
+			<font>
+				<Font size="53.0" />
+			</font>
+		</Label>
+		<Button fx:id="customerServices" contentDisplay="TOP" layoutX="75.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleCustomerServicesAction" prefHeight="211.0" prefWidth="186.0" style="-fx-background-color: #efaf23;" text="Customer" textFill="WHITE">
+			<graphic>
+				<ImageView fitHeight="188.0" fitWidth="303.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../../../Users/user/Downloads/jdecoImage/jdecoImage/kisspng-computer-icons-icon-design-customer-user-exposure-5ad9966a701115.6334544615242092584591-removebg-preview.jpg" />
+					</image>
+				</ImageView>
+			</graphic>
+			<font>
+				<Font name="System Bold" size="18.0" />
+			</font>
+		</Button>
+		<Button fx:id="otherServices" contentDisplay="TOP" layoutX="492.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleOtherServicesAction" prefHeight="219.0" prefWidth="327.0" style="-fx-background-color: #efaf23;" text="Services" textFill="WHITE">
+			<font>
+				<Font name="System Bold" size="18.0" />
+			</font>
+			<graphic>
+				<ImageView fitHeight="188.0" fitWidth="303.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../../../Users/user/Downloads/jdecoImage/jdecoImage/360_F_576930781_yByeVfHE2DRNgP0eAAYxftAwCQidkjuM-removebg-preview.jpg" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Button>
+	</children>
+	<padding>
+		<Insets bottom="20" left="20" right="20" top="20" />
+	</padding>
+</AnchorPane>

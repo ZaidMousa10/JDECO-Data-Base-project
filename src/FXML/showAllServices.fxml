@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="673.0" prefWidth="915.0"
+	style="-fx-background-color: #fffff0;"
+	xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="Controller.showAllServicesController">
+	<children>
+		<VBox alignment="CENTER" layoutY="37.0" prefHeight="600.0"
+			prefWidth="915.0" spacing="20.0">
+			<children>
+				<Label text="Customer Services" textFill="#6b6f7e">
+					<font>
+						<Font size="24.0" />
+					</font>
+				</Label>
+				<TableView fx:id="servicesTable" prefHeight="400.0"
+					prefWidth="740.0">
+					<columns>
+						<TableColumn fx:id="serviceIdColumn" prefWidth="100.0"
+							text="Service ID" />
+						<TableColumn fx:id="serviceDateColumn"
+							prefWidth="126.0" text="Service Date" />
+						<TableColumn fx:id="serviceTypeColumn"
+							prefWidth="144.0" text="Service Type" />
+						<TableColumn fx:id="debtColumn" prefWidth="135.0"
+							text="Debt" />
+						<TableColumn fx:id="locationColumn" prefWidth="120.0"
+							text="Location" />
+						<TableColumn fx:id="customerIDColumn"
+							prefWidth="111.0" text="Customer ID" />
+						<TableColumn fx:id="customerNameColumn"
+							prefWidth="163.0" text="Customer Name" />
+					</columns>
+				</TableView>
+				<HBox alignment="CENTER" spacing="10.0">
+					<children>
+						<Button fx:id="deleteButton" mnemonicParsing="false"
+							onAction="#handleDelete" text="Delete" />
+					    <Button fx:id="showDetailsButton" text="Show Details" onAction="#handleShowDetails"/>
+						<Button fx:id="showChartButton" text="Show Chart" onAction="#handleShowChart"/>
+					</children>
+				</HBox>
+			</children>
+			<padding>
+				<Insets bottom="10" left="10" right="10" top="10" />
+			</padding>
+		</VBox>
+	</children>
+</AnchorPane>
